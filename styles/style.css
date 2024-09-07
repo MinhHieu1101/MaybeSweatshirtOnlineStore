@@ -1,0 +1,717 @@
+/*************************************************
+filename: style.css
+author: the most average men on the planet aka Group 1
+created: since the birth of our suffering
+last modified: we couldn't dare to remember
+description: A Sorrowful Fashion Store For Men
+*************************************************/
+
+/* color code
+#3B503D: dark green
+#BAD8B6: light green
+#F5F5C6: light yellow
+*/
+
+/************************************************/
+/* apply to all our pages */
+/************************************************/
+* {
+  font-family: "Karma", sans-serif;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3B503D;
+  line-height: 1.6;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  background: #F5F5C6;
+  color: #3B503D;
+}
+
+tr:nth-child(1) {
+  background-color: #BAD8B6 !important;
+  color: #000000 !important;
+}
+
+table, th, td {
+  border: 3px solid #3B503D;
+  border-collapse: collapse;
+}
+
+h1 {
+  font: 60px Georgia, serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #F5F5C6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.grid_layout {
+  display: grid;
+  max-width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+}
+
+.big_title {
+  color: #F5F5C6;
+  text-align: center;
+  padding-top: 70px;
+  letter-spacing: 5px;
+  font-family: "Georgia", serif;
+  font-size: 2.5em;
+}
+
+hr.line {
+  border-top: 2px dotted #F5F5C6;
+  width: 50%;
+}
+
+/************************************************/
+/* navigation bar */
+/************************************************/
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #BAD8B6;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BAD8B6;
+  padding-left: 40px;
+}
+
+.navbar a {
+  font-weight: bold;
+  font-size: 1.25rem;
+}	
+
+.navbar_item {
+  margin-left: 10px;
+}
+
+/************************************************/
+/* footer */
+/************************************************/
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 40px;
+  font-size: 0.85rem;
+}
+
+.footer_container {
+  column-gap: 1.5rem;
+}
+
+.logo {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.logo_img {
+  width: 120px;
+}
+
+.store {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-style: italic;
+}
+
+/************************************************/
+/* home page */
+/************************************************/
+.index {
+  background-color: #BAD8B6;
+}
+
+.index_container {
+  height: 100vh;
+  padding-left: 50px;
+}
+
+.index_frame {
+  padding-top: 200px;
+}
+
+.index_banner {
+  align-self: center;
+  line-height: 1.2;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.index_banner span {
+  font-size: 6rem;
+}
+
+.index_img {
+  position: absolute;
+  right: 200px;
+  bottom: 0;
+  width: 260px;
+}
+
+.button {
+  padding: 20px;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #3B503D;
+}
+
+.button:hover {
+  background-color: #3B503D;
+}
+
+/*** view more section ***/
+.banner_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #BAD8B6;
+  transition: 1.0s;
+}
+
+.banner_group, .banner_link {
+  font-size: 0.5rem;
+}
+
+.banner_group:hover {
+  transform: scale(1.08);
+}
+
+.banner_link {
+  color: #3B503D;
+  padding-left: 17px;
+}
+
+/************************************************/
+/* form page */
+/************************************************/
+.form_banner {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #F5F5C6;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.form_page {
+  background: #3B503D;
+  color: #F5F5C6;
+  text-align: left;
+  line-height: 2.8;
+  letter-spacing: 3px;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+input, textarea, select {
+  padding: 12px 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  background-color: #F5F5C6;
+  color: #3B503D;
+}
+
+label {
+  display: inline-block;
+  width: 300px;
+ }
+ 
+.error {
+  color: pink;
+}
+
+.security {
+  padding-bottom: 30px;
+  text-align: center;
+}
+ 
+/************************************************/
+/* products page */
+/************************************************/
+.product_container {
+  padding: 16px 32px 16px 32px;
+  color: #F5F5C6;
+}
+
+.product_details ul {
+  list-style-type: circle;
+}
+
+.product_details ul, ol {
+  padding-left: 38%;
+}
+
+.product_details {
+  text-align: justify;
+  margin:2% 20% 2% 20%;
+}
+
+.product_details h3 {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.brand_description {
+  color: #FFFFFF;
+  text-align: justify;
+  width: 50%;
+  margin-left: 12.2%;
+}
+
+#brand {
+  margin-left: 24%;
+  text-align: left !important;
+}
+
+aside {
+  color: #BAD8B6;
+  text-align: justify;
+  width: 25%;
+  float: right;
+  border: 2px dashed black;
+  border-radius: 16px;
+  padding: 1em;
+  margin: 0.25em;
+  background: url(images/voucher.jpg) center/cover no-repeat;
+}
+
+.product_img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay_prod {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  transition: 1.0s;
+}
+
+.product_img:hover .overlay_prod {
+  bottom: 0;
+}
+
+#prod1 {
+  background: url(images/prod1-2.jpg) center no-repeat;
+}
+
+#prod2 {
+  background: url(images/prod2-2.jpg) center no-repeat;
+}
+
+#prod3 {
+  background: url(images/prod3-2.jpg) center no-repeat;
+}
+
+/************************************************/
+/* about us page */
+/************************************************/
+figure img {
+  border: 5px double pink;
+}
+
+figcaption {
+  padding: 2px;
+  background-color: black;
+  color: pink;
+  text-align: center;
+}
+
+.picture {
+  padding: 20px;
+  width: 20%;
+  height: auto;
+  float: right;
+}
+
+.team_container {
+  color: #F5F5C6;
+  padding: 16px 64px 16px 100px;
+}
+
+.info_details {
+  text-align: justify;
+  width: 50%;
+  float: left;
+  line-height: 1.8;
+}
+
+.info_table {
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+dl {
+  padding-bottom: 100px;
+}
+
+dt, dd { 
+  float: left; 
+  text-decoration: underline wavy;
+}
+
+dt { 
+  clear: both;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd a {
+  color: pink;
+}
+
+/************************************************/
+/* receipt page */
+/************************************************/
+.bill {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.bill-box {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #F5F5C6;
+  border-radius: 5%;
+}
+
+.bill-box table {
+  width: 100%;
+  line-height: inherit;
+}
+
+.bill-box table td {
+  padding: 5px;
+  vertical-align: top;
+}
+.bill-box .top tr td:nth-child(2) {
+  font-size: 30px;
+}
+
+.bill-box table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.bill-box table tr.top table td.title {
+  font-size: 80px;
+  line-height: 20px;
+}
+
+
+.bill-box table tr.heading td {
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.bill-box table tr.total {
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}
+
+/************************************************/
+/* manager page */
+/************************************************/
+.mng_body {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.mng_table {
+  text-align: center;
+}
+
+.mng_table th, td {
+  font-size: 0.875rem;
+}
+
+.mng_form button {
+  transition-duration: 0.4s;
+  background-color: #BAD8B6;
+  border-radius: 10%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 10px 20px;
+}
+
+.mng_form button:hover {
+  background-color: #F5F5C6;
+}
+
+.mng_form2 button {
+  transition-duration: 0.4s;
+  background-color: #F5F5C6;
+  border-radius: 10%;
+  border: 2px solid #BAD8B6;
+  padding: 0;
+  margin: 4px 2px;
+  font-size: 0.6875rem;
+}
+
+.mng_form2 button:hover {
+  background-color: #BAD8B6;
+}
+
+/************************************************/
+/* responsive layout */
+/************************************************/
+
+/*** for smartphones - 412-414px wide  ***/
+@media screen and (max-width: 768px)
+{ 
+  .navbar {
+	padding-left: 0;
+  }
+  
+  .nav_menu {
+	display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav_menu > * {
+    flex: 1 1 auto;
+  }
+  
+  .navbar a {
+	font-size: 0.5rem;
+  }
+  
+  .index {
+    padding-top: 4rem;
+  }
+  
+  .index_container {
+    height: 60vh;
+  }
+  
+  .index_banner {
+    font-size: 2rem;
+  }
+
+  .index_banner span {
+    font-size: 3rem;
+  }
+  
+  .index_img {
+	width: 150px;
+    right: 8%;
+	bottom: 33%;
+  }
+  
+  .banner_container {
+	grid-row-gap: 20px;
+  }
+  
+  .banner_img {
+    width: 100px;
+  }
+  
+  .form_page {
+  width: 100%;
+  }
+  
+  .picture {
+  width: 80%;
+  }
+  
+  .team_container {
+  display: inline-block;
+  width: 80%;
+  }
+  
+  dl {
+  padding-bottom: 200px;
+  }
+  
+  .info_details {
+  width: 100%;
+  }
+  
+  .bill-box table tr.top table td {
+  width: 100%;
+  display: block;
+  text-align: center;
+  }
+
+  .bill-box table tr.information table td {
+  width: 100%;
+  display: block;
+  text-align: center;
+  }
+}
+
+/*** for tablets / medium screens - 768px wide  ***/
+@media screen and (min-width: 768px)
+{
+  .navbar_item {
+    margin-left: 25px;
+  }
+  
+  .nav_menu {
+	display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav_menu > * {
+    flex: 1 1 auto;
+  }
+	
+  .index_frame {
+    height: max-content;
+    align-self: center;
+  }
+  
+  .index_banner span {
+    font-size: 5rem;
+  }
+
+  .index_img {
+    width: 350px;
+	right: 0;
+  }
+
+  .banner_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+	grid-column-gap: 20px;
+  }
+  
+  .banner_group {
+    padding: 0.5rem 2rem 0;
+  }
+
+  .banner_img {
+    width: 150px;
+  }
+  
+  .footer_container {
+    grid-template-columns: auto auto;
+	margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*** for large screens like pc or tv  ***/
+@media screen and (min-width: 1024px)
+{
+  .navbar {
+	padding-right: 40px;
+  }
+  
+  .index_container {
+	padding-left: 200px;
+  }
+
+  .index_frame {
+    padding-left: 2rem;
+  }
+  
+  .index_banner {
+    font-size: 3rem;
+  }
+
+  .index_banner span {
+    font-size: 5rem;
+  }
+
+  .index_img {
+	width: 400px;
+    right: 5%;
+  }
+  
+  .banner_container {
+	grid-column-gap: 40px;
+	margin: 2rem 4rem 2rem 4rem;
+  }
+  
+  .banner_banner {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+  }
+
+  .banner_subtitle {
+	font-size: 1.5rem;
+	color: #3B503D;
+  }
+  
+  .banner_group, .banner_link {
+    padding: 0.5rem 2rem 0 2rem;
+	font-size: 0.9rem;
+  }
+  
+  .banner_img {
+    width: 195px;
+  }
+  
+  .banner_link {
+    padding-left: 30px;
+  }
+}
